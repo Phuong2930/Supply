@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirSupplyPDC</RootNamespace>
+    <AssemblyName>AirSupplyPDC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\TRANSFER JOB\TRANSFER JOB\Stock Control System\Visualize stock MSD\MSD_Visualize\obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirSupplyDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirSupplyDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AirSupplyDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AirSupplyDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirSupplyDb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AsynProcess\Processing.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerList.designer.cs">
+      <DependentUpon>frmServerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStore.Designer.cs">
+      <DependentUpon>frmStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemCabinet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemCabinet.Designer.cs">
+      <DependentUpon>itemCabinet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemCell.Designer.cs">
+      <DependentUpon>itemCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemPart.Designer.cs">
+      <DependentUpon>itemPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemRemain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemRemain.Designer.cs">
+      <DependentUpon>itemRemain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tb_Area.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Cabinet.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Cell.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_InOutRecord.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Location.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Merchandise.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Model.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Part.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_Remain.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_SettingCabinetCell.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_SettingCabinetPart.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_SettingPart.cs">
+      <DependentUpon>AirSupplyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TCP-IP\actionCabinet.cs" />
+    <Compile Include="TCP-IP\Client.cs" />
+    <Compile Include="TCP-IP\Connectdb.cs" />
+    <Compile Include="TCP-IP\InforCommon.cs" />
+    <Compile Include="TCP-IP\Objects.cs" />
+    <Compile Include="TCP-IP\Server.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServerList.resx">
+      <DependentUpon>frmServerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStore.resx">
+      <DependentUpon>frmStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemCabinet.resx">
+      <DependentUpon>itemCabinet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemCell.resx">
+      <DependentUpon>itemCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemPart.resx">
+      <DependentUpon>itemPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemRemain.resx">
+      <DependentUpon>itemRemain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="AirSupplyDb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AirSupplyDb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AirSupplyDb.edmx.diagram">
+      <DependentUpon>AirSupplyDb.edmx</DependentUpon>
+    </None>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AirSupplyPDC.TCP_IP.TransactionInfor.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AirSupplyDb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AirSupplyDb.Context.cs</LastGenOutput>
+      <DependentUpon>AirSupplyDb.edmx</DependentUpon>
+    </Content>
+    <Content Include="AirSupplyDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AirSupplyDb.edmx</DependentUpon>
+      <LastGenOutput>AirSupplyDb.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\table_16x16.png" />
+    <None Include="Resources\movedown_16x16.png" />
+    <None Include="Resources\media_16x16.png" />
+    <None Include="Resources\home_16x16.png" />
+    <None Include="Resources\expandcollapse_16x16.png" />
+    <None Include="Resources\changestatus_16x16.png" />
+    <None Include="Resources\cancel_16x161.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\bocontact_16x16.png" />
+    <None Include="Resources\addnewdatasource_32x32.png" />
+    <None Include="Resources\addnewdatasource_16x16.png" />
+    <None Include="Resources\addcolumn_16x16.png" />
+    <None Include="Resources\addchartpane_16x16.png" />
+    <None Include="Resources\about_16x16.png" />
+    <None Include="Resources\savepagesetup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

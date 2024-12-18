@@ -1,0 +1,1075 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AirSupplyPDCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_Area">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ENABLE_" Type="bit" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_Cabinet">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_LOC" Type="int" Nullable="false" />
+          <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CAPACITY_" Type="int" Nullable="false" />
+          <Property Name="ISRETURN_" Type="bit" Nullable="false" />
+          <Property Name="ID_CELL_MAIN" Type="int" />
+          <Property Name="ENABLE_" Type="bit" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_Cell">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_AREA" Type="int" Nullable="false" />
+          <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BACKGROUND" Type="varchar" MaxLength="50" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_InOutRecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID_AREA" Type="int" Nullable="false" />
+          <Property Name="ID_CABINET" Type="int" Nullable="false" />
+          <Property Name="SNP_" Type="int" Nullable="false" />
+          <Property Name="INOUT_" Type="bit" Nullable="false" />
+          <Property Name="DATE_ONCONVEYOR" Type="datetime" />
+          <Property Name="DATE_INSTORE" Type="datetime" />
+          <Property Name="DATE_OUTSTORE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tb_Location">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_AREA" Type="int" Nullable="false" />
+          <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ENABLE_" Type="bit" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_Merchandise">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_Model">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_Part">
+          <Key>
+            <PropertyRef Name="PARTID" />
+          </Key>
+          <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NAME_" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="VENDOR_" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PCSPBOX_" Type="int" Nullable="false" />
+          <Property Name="NAMEBACK_" Type="bit" Nullable="false" />
+          <Property Name="ENABLE_" Type="bit" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+          <Property Name="type_part" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Remain">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_AREA" Type="int" Nullable="false" />
+          <Property Name="ID_CABINET" Type="int" Nullable="false" />
+          <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ONCONVEYOR_DATE" Type="datetime" />
+          <Property Name="INSTORE_DATE" Type="datetime" />
+          <Property Name="ISFINISH" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_SettingCabinetCell">
+          <Key>
+            <PropertyRef Name="ID_CABINET" />
+            <PropertyRef Name="ID_CELL" />
+          </Key>
+          <Property Name="ID_CABINET" Type="int" Nullable="false" />
+          <Property Name="ID_CELL" Type="int" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_SettingCabinetPart">
+          <Key>
+            <PropertyRef Name="ID_CABINET" />
+            <PropertyRef Name="PARDID" />
+          </Key>
+          <Property Name="ID_CABINET" Type="int" Nullable="false" />
+          <Property Name="PARDID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_SettingPart">
+          <Key>
+            <PropertyRef Name="PARTID" />
+            <PropertyRef Name="ID_MER" />
+            <PropertyRef Name="ID_MODEL" />
+            <PropertyRef Name="ID_AREA" />
+          </Key>
+          <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID_MER" Type="int" Nullable="false" />
+          <Property Name="ID_MODEL" Type="int" Nullable="false" />
+          <Property Name="ID_AREA" Type="int" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tb_Cabinet_tb_Cell">
+          <End Role="tb_Cell" Type="Self.tb_Cell" Multiplicity="0..1" />
+          <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cell">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Cabinet">
+              <PropertyRef Name="ID_CELL_MAIN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Cabinet_tb_Location">
+          <End Role="tb_Location" Type="Self.tb_Location" Multiplicity="1" />
+          <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Location">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Cabinet">
+              <PropertyRef Name="ID_LOC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Cell_tb_Area">
+          <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+          <End Role="tb_Cell" Type="Self.tb_Cell" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Cell">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_InOutRecord_tb_Area">
+          <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+          <End Role="tb_InOutRecord" Type="Self.tb_InOutRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_InOutRecord">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_InOutRecord_tb_Cabinet">
+          <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+          <End Role="tb_InOutRecord" Type="Self.tb_InOutRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_InOutRecord">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_InOutRecord_tb_Part">
+          <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+          <End Role="tb_InOutRecord" Type="Self.tb_InOutRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_InOutRecord">
+              <PropertyRef Name="PARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Location_tb_Area">
+          <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+          <End Role="tb_Location" Type="Self.tb_Location" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Location">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Remain_tb_Area">
+          <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+          <End Role="tb_Remain" Type="Self.tb_Remain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Remain">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Remain_tb_Cabinet">
+          <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+          <End Role="tb_Remain" Type="Self.tb_Remain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Remain">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Remain_tb_Part">
+          <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+          <End Role="tb_Remain" Type="Self.tb_Remain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_Remain">
+              <PropertyRef Name="PARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetCell_tb_Cabinet">
+          <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+          <End Role="tb_SettingCabinetCell" Type="Self.tb_SettingCabinetCell" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetCell">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetCell_tb_Cell">
+          <End Role="tb_Cell" Type="Self.tb_Cell" Multiplicity="1" />
+          <End Role="tb_SettingCabinetCell" Type="Self.tb_SettingCabinetCell" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cell">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetCell">
+              <PropertyRef Name="ID_CELL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetPart_tb_Cabinet">
+          <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+          <End Role="tb_SettingCabinetPart" Type="Self.tb_SettingCabinetPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetPart">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetPart_tb_Part">
+          <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+          <End Role="tb_SettingCabinetPart" Type="Self.tb_SettingCabinetPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetPart">
+              <PropertyRef Name="PARDID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Area">
+          <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+          <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Merchandise">
+          <End Role="tb_Merchandise" Type="Self.tb_Merchandise" Multiplicity="1" />
+          <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Merchandise">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="ID_MER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Model">
+          <End Role="tb_Model" Type="Self.tb_Model" Multiplicity="1" />
+          <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Model">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="ID_MODEL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Part">
+          <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+          <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="PARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="GetTimeNow" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="AirSupplyPDCModelStoreContainer">
+          <EntitySet Name="tb_Area" EntityType="Self.tb_Area" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Cabinet" EntityType="Self.tb_Cabinet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Cell" EntityType="Self.tb_Cell" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_InOutRecord" EntityType="Self.tb_InOutRecord" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Location" EntityType="Self.tb_Location" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Merchandise" EntityType="Self.tb_Merchandise" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Model" EntityType="Self.tb_Model" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Part" EntityType="Self.tb_Part" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Remain" EntityType="Self.tb_Remain" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_SettingCabinetCell" EntityType="Self.tb_SettingCabinetCell" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_SettingCabinetPart" EntityType="Self.tb_SettingCabinetPart" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_SettingPart" EntityType="Self.tb_SettingPart" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tb_Cabinet_tb_Cell" Association="Self.FK_tb_Cabinet_tb_Cell">
+            <End Role="tb_Cell" EntitySet="tb_Cell" />
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Cabinet_tb_Location" Association="Self.FK_tb_Cabinet_tb_Location">
+            <End Role="tb_Location" EntitySet="tb_Location" />
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Cell_tb_Area" Association="Self.FK_tb_Cell_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_Cell" EntitySet="tb_Cell" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_InOutRecord_tb_Area" Association="Self.FK_tb_InOutRecord_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_InOutRecord_tb_Cabinet" Association="Self.FK_tb_InOutRecord_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_InOutRecord_tb_Part" Association="Self.FK_tb_InOutRecord_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Location_tb_Area" Association="Self.FK_tb_Location_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_Location" EntitySet="tb_Location" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Remain_tb_Area" Association="Self.FK_tb_Remain_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_Remain" EntitySet="tb_Remain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Remain_tb_Cabinet" Association="Self.FK_tb_Remain_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_Remain" EntitySet="tb_Remain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Remain_tb_Part" Association="Self.FK_tb_Remain_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_Remain" EntitySet="tb_Remain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetCell_tb_Cabinet" Association="Self.FK_tb_SettingCabinetCell_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_SettingCabinetCell" EntitySet="tb_SettingCabinetCell" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetCell_tb_Cell" Association="Self.FK_tb_SettingCabinetCell_tb_Cell">
+            <End Role="tb_Cell" EntitySet="tb_Cell" />
+            <End Role="tb_SettingCabinetCell" EntitySet="tb_SettingCabinetCell" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetPart_tb_Cabinet" Association="Self.FK_tb_SettingCabinetPart_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_SettingCabinetPart" EntitySet="tb_SettingCabinetPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetPart_tb_Part" Association="Self.FK_tb_SettingCabinetPart_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_SettingCabinetPart" EntitySet="tb_SettingCabinetPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Area" Association="Self.FK_tb_SettingPart_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Merchandise" Association="Self.FK_tb_SettingPart_tb_Merchandise">
+            <End Role="tb_Merchandise" EntitySet="tb_Merchandise" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Model" Association="Self.FK_tb_SettingPart_tb_Model">
+            <End Role="tb_Model" EntitySet="tb_Model" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Part" Association="Self.FK_tb_SettingPart_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AirSupplyPDCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AirSupplyPDCEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="GetTimeNow" ReturnType="Collection(DateTime)" />
+          <EntitySet Name="tb_Area" EntityType="AirSupplyPDCModel.tb_Area" />
+          <EntitySet Name="tb_Cabinet" EntityType="AirSupplyPDCModel.tb_Cabinet" />
+          <EntitySet Name="tb_Cell" EntityType="AirSupplyPDCModel.tb_Cell" />
+          <EntitySet Name="tb_InOutRecord" EntityType="AirSupplyPDCModel.tb_InOutRecord" />
+          <EntitySet Name="tb_Location" EntityType="AirSupplyPDCModel.tb_Location" />
+          <EntitySet Name="tb_Merchandise" EntityType="AirSupplyPDCModel.tb_Merchandise" />
+          <EntitySet Name="tb_Model" EntityType="AirSupplyPDCModel.tb_Model" />
+          <EntitySet Name="tb_Part" EntityType="AirSupplyPDCModel.tb_Part" />
+          <EntitySet Name="tb_Remain" EntityType="AirSupplyPDCModel.tb_Remain" />
+          <EntitySet Name="tb_SettingCabinetCell" EntityType="AirSupplyPDCModel.tb_SettingCabinetCell" />
+          <EntitySet Name="tb_SettingCabinetPart" EntityType="AirSupplyPDCModel.tb_SettingCabinetPart" />
+          <EntitySet Name="tb_SettingPart" EntityType="AirSupplyPDCModel.tb_SettingPart" />
+          <AssociationSet Name="FK_tb_Cell_tb_Area" Association="AirSupplyPDCModel.FK_tb_Cell_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_Cell" EntitySet="tb_Cell" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_InOutRecord_tb_Area" Association="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Location_tb_Area" Association="AirSupplyPDCModel.FK_tb_Location_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_Location" EntitySet="tb_Location" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Remain_tb_Area" Association="AirSupplyPDCModel.FK_tb_Remain_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_Remain" EntitySet="tb_Remain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Area" Association="AirSupplyPDCModel.FK_tb_SettingPart_tb_Area">
+            <End Role="tb_Area" EntitySet="tb_Area" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Cabinet_tb_Cell" Association="AirSupplyPDCModel.FK_tb_Cabinet_tb_Cell">
+            <End Role="tb_Cell" EntitySet="tb_Cell" />
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Cabinet_tb_Location" Association="AirSupplyPDCModel.FK_tb_Cabinet_tb_Location">
+            <End Role="tb_Location" EntitySet="tb_Location" />
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_InOutRecord_tb_Cabinet" Association="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Remain_tb_Cabinet" Association="AirSupplyPDCModel.FK_tb_Remain_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_Remain" EntitySet="tb_Remain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetCell_tb_Cabinet" Association="AirSupplyPDCModel.FK_tb_SettingCabinetCell_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_SettingCabinetCell" EntitySet="tb_SettingCabinetCell" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetPart_tb_Cabinet" Association="AirSupplyPDCModel.FK_tb_SettingCabinetPart_tb_Cabinet">
+            <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+            <End Role="tb_SettingCabinetPart" EntitySet="tb_SettingCabinetPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetCell_tb_Cell" Association="AirSupplyPDCModel.FK_tb_SettingCabinetCell_tb_Cell">
+            <End Role="tb_Cell" EntitySet="tb_Cell" />
+            <End Role="tb_SettingCabinetCell" EntitySet="tb_SettingCabinetCell" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_InOutRecord_tb_Part" Association="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Merchandise" Association="AirSupplyPDCModel.FK_tb_SettingPart_tb_Merchandise">
+            <End Role="tb_Merchandise" EntitySet="tb_Merchandise" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Model" Association="AirSupplyPDCModel.FK_tb_SettingPart_tb_Model">
+            <End Role="tb_Model" EntitySet="tb_Model" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_Remain_tb_Part" Association="AirSupplyPDCModel.FK_tb_Remain_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_Remain" EntitySet="tb_Remain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingCabinetPart_tb_Part" Association="AirSupplyPDCModel.FK_tb_SettingCabinetPart_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_SettingCabinetPart" EntitySet="tb_SettingCabinetPart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_SettingPart_tb_Part" Association="AirSupplyPDCModel.FK_tb_SettingPart_tb_Part">
+            <End Role="tb_Part" EntitySet="tb_Part" />
+            <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="tb_Area">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME_" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ENABLE_" Type="Boolean" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_Cell" Relationship="AirSupplyPDCModel.FK_tb_Cell_tb_Area" FromRole="tb_Area" ToRole="tb_Cell" />
+          <NavigationProperty Name="tb_InOutRecord" Relationship="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Area" FromRole="tb_Area" ToRole="tb_InOutRecord" />
+          <NavigationProperty Name="tb_Location" Relationship="AirSupplyPDCModel.FK_tb_Location_tb_Area" FromRole="tb_Area" ToRole="tb_Location" />
+          <NavigationProperty Name="tb_Remain" Relationship="AirSupplyPDCModel.FK_tb_Remain_tb_Area" FromRole="tb_Area" ToRole="tb_Remain" />
+          <NavigationProperty Name="tb_SettingPart" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Area" FromRole="tb_Area" ToRole="tb_SettingPart" />
+        </EntityType>
+        <EntityType Name="tb_Cabinet">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_LOC" Type="Int32" Nullable="false" />
+          <Property Name="NAME_" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CAPACITY_" Type="Int32" Nullable="false" />
+          <Property Name="ISRETURN_" Type="Boolean" Nullable="false" />
+          <Property Name="ID_CELL_MAIN" Type="Int32" />
+          <Property Name="ENABLE_" Type="Boolean" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_Cell" Relationship="AirSupplyPDCModel.FK_tb_Cabinet_tb_Cell" FromRole="tb_Cabinet" ToRole="tb_Cell" />
+          <NavigationProperty Name="tb_Location" Relationship="AirSupplyPDCModel.FK_tb_Cabinet_tb_Location" FromRole="tb_Cabinet" ToRole="tb_Location" />
+          <NavigationProperty Name="tb_InOutRecord" Relationship="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Cabinet" FromRole="tb_Cabinet" ToRole="tb_InOutRecord" />
+          <NavigationProperty Name="tb_Remain" Relationship="AirSupplyPDCModel.FK_tb_Remain_tb_Cabinet" FromRole="tb_Cabinet" ToRole="tb_Remain" />
+          <NavigationProperty Name="tb_SettingCabinetCell" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetCell_tb_Cabinet" FromRole="tb_Cabinet" ToRole="tb_SettingCabinetCell" />
+          <NavigationProperty Name="tb_SettingCabinetPart" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetPart_tb_Cabinet" FromRole="tb_Cabinet" ToRole="tb_SettingCabinetPart" />
+        </EntityType>
+        <EntityType Name="tb_Cell">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_AREA" Type="Int32" Nullable="false" />
+          <Property Name="NAME_" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BACKGROUND" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_Area" Relationship="AirSupplyPDCModel.FK_tb_Cell_tb_Area" FromRole="tb_Cell" ToRole="tb_Area" />
+          <NavigationProperty Name="tb_Cabinet" Relationship="AirSupplyPDCModel.FK_tb_Cabinet_tb_Cell" FromRole="tb_Cell" ToRole="tb_Cabinet" />
+          <NavigationProperty Name="tb_SettingCabinetCell" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetCell_tb_Cell" FromRole="tb_Cell" ToRole="tb_SettingCabinetCell" />
+        </EntityType>
+        <EntityType Name="tb_InOutRecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PARTID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID_AREA" Type="Int32" Nullable="false" />
+          <Property Name="ID_CABINET" Type="Int32" Nullable="false" />
+          <Property Name="SNP_" Type="Int32" Nullable="false" />
+          <Property Name="INOUT_" Type="Boolean" Nullable="false" />
+          <Property Name="DATE_ONCONVEYOR" Type="DateTime" Precision="3" />
+          <Property Name="DATE_INSTORE" Type="DateTime" Precision="3" />
+          <Property Name="DATE_OUTSTORE" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="tb_Area" Relationship="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Area" FromRole="tb_InOutRecord" ToRole="tb_Area" />
+          <NavigationProperty Name="tb_Cabinet" Relationship="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Cabinet" FromRole="tb_InOutRecord" ToRole="tb_Cabinet" />
+          <NavigationProperty Name="tb_Part" Relationship="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Part" FromRole="tb_InOutRecord" ToRole="tb_Part" />
+        </EntityType>
+        <EntityType Name="tb_Location">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_AREA" Type="Int32" Nullable="false" />
+          <Property Name="NAME_" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ENABLE_" Type="Boolean" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_Area" Relationship="AirSupplyPDCModel.FK_tb_Location_tb_Area" FromRole="tb_Location" ToRole="tb_Area" />
+          <NavigationProperty Name="tb_Cabinet" Relationship="AirSupplyPDCModel.FK_tb_Cabinet_tb_Location" FromRole="tb_Location" ToRole="tb_Cabinet" />
+        </EntityType>
+        <EntityType Name="tb_Merchandise">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME_" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_SettingPart" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Merchandise" FromRole="tb_Merchandise" ToRole="tb_SettingPart" />
+        </EntityType>
+        <EntityType Name="tb_Model">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME_" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_SettingPart" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Model" FromRole="tb_Model" ToRole="tb_SettingPart" />
+        </EntityType>
+        <EntityType Name="tb_Part">
+          <Key>
+            <PropertyRef Name="PARTID" />
+          </Key>
+          <Property Name="PARTID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NAME_" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="VENDOR_" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PCSPBOX_" Type="Int32" Nullable="false" />
+          <Property Name="NAMEBACK_" Type="Boolean" Nullable="false" />
+          <Property Name="ENABLE_" Type="Boolean" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_InOutRecord" Relationship="AirSupplyPDCModel.FK_tb_InOutRecord_tb_Part" FromRole="tb_Part" ToRole="tb_InOutRecord" />
+          <NavigationProperty Name="tb_Remain" Relationship="AirSupplyPDCModel.FK_tb_Remain_tb_Part" FromRole="tb_Part" ToRole="tb_Remain" />
+          <NavigationProperty Name="tb_SettingCabinetPart" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetPart_tb_Part" FromRole="tb_Part" ToRole="tb_SettingCabinetPart" />
+          <NavigationProperty Name="tb_SettingPart" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Part" FromRole="tb_Part" ToRole="tb_SettingPart" />
+          <Property Name="type_part" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tb_Remain">
+          <Key>
+            <PropertyRef Name="ID_" />
+          </Key>
+          <Property Name="ID_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_AREA" Type="Int32" Nullable="false" />
+          <Property Name="ID_CABINET" Type="Int32" Nullable="false" />
+          <Property Name="PARTID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ONCONVEYOR_DATE" Type="DateTime" Precision="3" />
+          <Property Name="INSTORE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="ISFINISH" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="tb_Area" Relationship="AirSupplyPDCModel.FK_tb_Remain_tb_Area" FromRole="tb_Remain" ToRole="tb_Area" />
+          <NavigationProperty Name="tb_Cabinet" Relationship="AirSupplyPDCModel.FK_tb_Remain_tb_Cabinet" FromRole="tb_Remain" ToRole="tb_Cabinet" />
+          <NavigationProperty Name="tb_Part" Relationship="AirSupplyPDCModel.FK_tb_Remain_tb_Part" FromRole="tb_Remain" ToRole="tb_Part" />
+        </EntityType>
+        <EntityType Name="tb_SettingCabinetCell">
+          <Key>
+            <PropertyRef Name="ID_CABINET" />
+            <PropertyRef Name="ID_CELL" />
+          </Key>
+          <Property Name="ID_CABINET" Type="Int32" Nullable="false" />
+          <Property Name="ID_CELL" Type="Int32" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_Cabinet" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetCell_tb_Cabinet" FromRole="tb_SettingCabinetCell" ToRole="tb_Cabinet" />
+          <NavigationProperty Name="tb_Cell" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetCell_tb_Cell" FromRole="tb_SettingCabinetCell" ToRole="tb_Cell" />
+        </EntityType>
+        <EntityType Name="tb_SettingCabinetPart">
+          <Key>
+            <PropertyRef Name="ID_CABINET" />
+            <PropertyRef Name="PARDID" />
+          </Key>
+          <Property Name="ID_CABINET" Type="Int32" Nullable="false" />
+          <Property Name="PARDID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_Cabinet" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetPart_tb_Cabinet" FromRole="tb_SettingCabinetPart" ToRole="tb_Cabinet" />
+          <NavigationProperty Name="tb_Part" Relationship="AirSupplyPDCModel.FK_tb_SettingCabinetPart_tb_Part" FromRole="tb_SettingCabinetPart" ToRole="tb_Part" />
+        </EntityType>
+        <EntityType Name="tb_SettingPart">
+          <Key>
+            <PropertyRef Name="PARTID" />
+            <PropertyRef Name="ID_MER" />
+            <PropertyRef Name="ID_MODEL" />
+            <PropertyRef Name="ID_AREA" />
+          </Key>
+          <Property Name="PARTID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID_MER" Type="Int32" Nullable="false" />
+          <Property Name="ID_MODEL" Type="Int32" Nullable="false" />
+          <Property Name="ID_AREA" Type="Int32" Nullable="false" />
+          <Property Name="DATE_CREATED" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tb_Area" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Area" FromRole="tb_SettingPart" ToRole="tb_Area" />
+          <NavigationProperty Name="tb_Merchandise" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Merchandise" FromRole="tb_SettingPart" ToRole="tb_Merchandise" />
+          <NavigationProperty Name="tb_Model" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Model" FromRole="tb_SettingPart" ToRole="tb_Model" />
+          <NavigationProperty Name="tb_Part" Relationship="AirSupplyPDCModel.FK_tb_SettingPart_tb_Part" FromRole="tb_SettingPart" ToRole="tb_Part" />
+        </EntityType>
+        <Association Name="FK_tb_Cell_tb_Area">
+          <End Type="AirSupplyPDCModel.tb_Area" Role="tb_Area" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_Cell" Role="tb_Cell" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Cell">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_InOutRecord_tb_Area">
+          <End Type="AirSupplyPDCModel.tb_Area" Role="tb_Area" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_InOutRecord" Role="tb_InOutRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_InOutRecord">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Location_tb_Area">
+          <End Type="AirSupplyPDCModel.tb_Area" Role="tb_Area" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_Location" Role="tb_Location" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Location">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Remain_tb_Area">
+          <End Type="AirSupplyPDCModel.tb_Area" Role="tb_Area" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_Remain" Role="tb_Remain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Remain">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Area">
+          <End Type="AirSupplyPDCModel.tb_Area" Role="tb_Area" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingPart" Role="tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Area">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="ID_AREA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Cabinet_tb_Cell">
+          <End Type="AirSupplyPDCModel.tb_Cell" Role="tb_Cell" Multiplicity="0..1" />
+          <End Type="AirSupplyPDCModel.tb_Cabinet" Role="tb_Cabinet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cell">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Cabinet">
+              <PropertyRef Name="ID_CELL_MAIN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Cabinet_tb_Location">
+          <End Type="AirSupplyPDCModel.tb_Location" Role="tb_Location" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_Cabinet" Role="tb_Cabinet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Location">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Cabinet">
+              <PropertyRef Name="ID_LOC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_InOutRecord_tb_Cabinet">
+          <End Type="AirSupplyPDCModel.tb_Cabinet" Role="tb_Cabinet" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_InOutRecord" Role="tb_InOutRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_InOutRecord">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Remain_tb_Cabinet">
+          <End Type="AirSupplyPDCModel.tb_Cabinet" Role="tb_Cabinet" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_Remain" Role="tb_Remain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_Remain">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetCell_tb_Cabinet">
+          <End Type="AirSupplyPDCModel.tb_Cabinet" Role="tb_Cabinet" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingCabinetCell" Role="tb_SettingCabinetCell" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetCell">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetPart_tb_Cabinet">
+          <End Type="AirSupplyPDCModel.tb_Cabinet" Role="tb_Cabinet" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingCabinetPart" Role="tb_SettingCabinetPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cabinet">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetPart">
+              <PropertyRef Name="ID_CABINET" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetCell_tb_Cell">
+          <End Type="AirSupplyPDCModel.tb_Cell" Role="tb_Cell" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingCabinetCell" Role="tb_SettingCabinetCell" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Cell">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetCell">
+              <PropertyRef Name="ID_CELL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_InOutRecord_tb_Part">
+          <End Type="AirSupplyPDCModel.tb_Part" Role="tb_Part" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_InOutRecord" Role="tb_InOutRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_InOutRecord">
+              <PropertyRef Name="PARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Merchandise">
+          <End Type="AirSupplyPDCModel.tb_Merchandise" Role="tb_Merchandise" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingPart" Role="tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Merchandise">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="ID_MER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Model">
+          <End Type="AirSupplyPDCModel.tb_Model" Role="tb_Model" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingPart" Role="tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Model">
+              <PropertyRef Name="ID_" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="ID_MODEL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_Remain_tb_Part">
+          <End Type="AirSupplyPDCModel.tb_Part" Role="tb_Part" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_Remain" Role="tb_Remain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_Remain">
+              <PropertyRef Name="PARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingCabinetPart_tb_Part">
+          <End Type="AirSupplyPDCModel.tb_Part" Role="tb_Part" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingCabinetPart" Role="tb_SettingCabinetPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_SettingCabinetPart">
+              <PropertyRef Name="PARDID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_SettingPart_tb_Part">
+          <End Type="AirSupplyPDCModel.tb_Part" Role="tb_Part" Multiplicity="1" />
+          <End Type="AirSupplyPDCModel.tb_SettingPart" Role="tb_SettingPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Part">
+              <PropertyRef Name="PARTID" />
+            </Principal>
+            <Dependent Role="tb_SettingPart">
+              <PropertyRef Name="PARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AirSupplyPDCModelStoreContainer" CdmEntityContainer="AirSupplyPDCEntities">
+          <FunctionImportMapping FunctionImportName="GetTimeNow" FunctionName="AirSupplyPDCModel.Store.GetTimeNow" />
+          <EntitySetMapping Name="tb_Area">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Area">
+              <MappingFragment StoreEntitySet="tb_Area">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="ID_" ColumnName="ID_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Cabinet">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Cabinet">
+              <MappingFragment StoreEntitySet="tb_Cabinet">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+                <ScalarProperty Name="ID_CELL_MAIN" ColumnName="ID_CELL_MAIN" />
+                <ScalarProperty Name="ISRETURN_" ColumnName="ISRETURN_" />
+                <ScalarProperty Name="CAPACITY_" ColumnName="CAPACITY_" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="ID_LOC" ColumnName="ID_LOC" />
+                <ScalarProperty Name="ID_" ColumnName="ID_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Cell">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Cell">
+              <MappingFragment StoreEntitySet="tb_Cell">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="BACKGROUND" ColumnName="BACKGROUND" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+                <ScalarProperty Name="ID_" ColumnName="ID_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_InOutRecord">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_InOutRecord">
+              <MappingFragment StoreEntitySet="tb_InOutRecord">
+                <ScalarProperty Name="DATE_OUTSTORE" ColumnName="DATE_OUTSTORE" />
+                <ScalarProperty Name="DATE_INSTORE" ColumnName="DATE_INSTORE" />
+                <ScalarProperty Name="DATE_ONCONVEYOR" ColumnName="DATE_ONCONVEYOR" />
+                <ScalarProperty Name="INOUT_" ColumnName="INOUT_" />
+                <ScalarProperty Name="SNP_" ColumnName="SNP_" />
+                <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+                <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Location">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Location">
+              <MappingFragment StoreEntitySet="tb_Location">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+                <ScalarProperty Name="ID_" ColumnName="ID_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Merchandise">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Merchandise">
+              <MappingFragment StoreEntitySet="tb_Merchandise">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="ID_" ColumnName="ID_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Model">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Model">
+              <MappingFragment StoreEntitySet="tb_Model">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="ID_" ColumnName="ID_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Part">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Part">
+              <MappingFragment StoreEntitySet="tb_Part">
+                <ScalarProperty Name="type_part" ColumnName="type_part" />
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+                <ScalarProperty Name="NAMEBACK_" ColumnName="NAMEBACK_" />
+                <ScalarProperty Name="PCSPBOX_" ColumnName="PCSPBOX_" />
+                <ScalarProperty Name="VENDOR_" ColumnName="VENDOR_" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Remain">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Remain">
+              <MappingFragment StoreEntitySet="tb_Remain">
+                <ScalarProperty Name="ISFINISH" ColumnName="ISFINISH" />
+                <ScalarProperty Name="INSTORE_DATE" ColumnName="INSTORE_DATE" />
+                <ScalarProperty Name="ONCONVEYOR_DATE" ColumnName="ONCONVEYOR_DATE" />
+                <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+                <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+                <ScalarProperty Name="ID_" ColumnName="ID_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_SettingCabinetCell">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_SettingCabinetCell">
+              <MappingFragment StoreEntitySet="tb_SettingCabinetCell">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="ID_CELL" ColumnName="ID_CELL" />
+                <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_SettingCabinetPart">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_SettingCabinetPart">
+              <MappingFragment StoreEntitySet="tb_SettingCabinetPart">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="PARDID" ColumnName="PARDID" />
+                <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_SettingPart">
+            <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_SettingPart">
+              <MappingFragment StoreEntitySet="tb_SettingPart">
+                <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+                <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+                <ScalarProperty Name="ID_MODEL" ColumnName="ID_MODEL" />
+                <ScalarProperty Name="ID_MER" ColumnName="ID_MER" />
+                <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

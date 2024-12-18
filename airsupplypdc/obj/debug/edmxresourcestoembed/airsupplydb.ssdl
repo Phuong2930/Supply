@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirSupplyPDCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_Area">
+    <Key>
+      <PropertyRef Name="ID_" />
+    </Key>
+    <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ENABLE_" Type="bit" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_Cabinet">
+    <Key>
+      <PropertyRef Name="ID_" />
+    </Key>
+    <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_LOC" Type="int" Nullable="false" />
+    <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CAPACITY_" Type="int" Nullable="false" />
+    <Property Name="ISRETURN_" Type="bit" Nullable="false" />
+    <Property Name="ID_CELL_MAIN" Type="int" />
+    <Property Name="ENABLE_" Type="bit" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_Cell">
+    <Key>
+      <PropertyRef Name="ID_" />
+    </Key>
+    <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_AREA" Type="int" Nullable="false" />
+    <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BACKGROUND" Type="varchar" MaxLength="50" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_InOutRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ID_AREA" Type="int" Nullable="false" />
+    <Property Name="ID_CABINET" Type="int" Nullable="false" />
+    <Property Name="SNP_" Type="int" Nullable="false" />
+    <Property Name="INOUT_" Type="bit" Nullable="false" />
+    <Property Name="DATE_ONCONVEYOR" Type="datetime" />
+    <Property Name="DATE_INSTORE" Type="datetime" />
+    <Property Name="DATE_OUTSTORE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Location">
+    <Key>
+      <PropertyRef Name="ID_" />
+    </Key>
+    <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_AREA" Type="int" Nullable="false" />
+    <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ENABLE_" Type="bit" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_Merchandise">
+    <Key>
+      <PropertyRef Name="ID_" />
+    </Key>
+    <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_Model">
+    <Key>
+      <PropertyRef Name="ID_" />
+    </Key>
+    <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME_" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_Part">
+    <Key>
+      <PropertyRef Name="PARTID" />
+    </Key>
+    <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NAME_" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="VENDOR_" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PCSPBOX_" Type="int" Nullable="false" />
+    <Property Name="NAMEBACK_" Type="bit" Nullable="false" />
+    <Property Name="ENABLE_" Type="bit" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+    <Property Name="type_part" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Remain">
+    <Key>
+      <PropertyRef Name="ID_" />
+    </Key>
+    <Property Name="ID_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_AREA" Type="int" Nullable="false" />
+    <Property Name="ID_CABINET" Type="int" Nullable="false" />
+    <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ONCONVEYOR_DATE" Type="datetime" />
+    <Property Name="INSTORE_DATE" Type="datetime" />
+    <Property Name="ISFINISH" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_SettingCabinetCell">
+    <Key>
+      <PropertyRef Name="ID_CABINET" />
+      <PropertyRef Name="ID_CELL" />
+    </Key>
+    <Property Name="ID_CABINET" Type="int" Nullable="false" />
+    <Property Name="ID_CELL" Type="int" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_SettingCabinetPart">
+    <Key>
+      <PropertyRef Name="ID_CABINET" />
+      <PropertyRef Name="PARDID" />
+    </Key>
+    <Property Name="ID_CABINET" Type="int" Nullable="false" />
+    <Property Name="PARDID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_SettingPart">
+    <Key>
+      <PropertyRef Name="PARTID" />
+      <PropertyRef Name="ID_MER" />
+      <PropertyRef Name="ID_MODEL" />
+      <PropertyRef Name="ID_AREA" />
+    </Key>
+    <Property Name="PARTID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ID_MER" Type="int" Nullable="false" />
+    <Property Name="ID_MODEL" Type="int" Nullable="false" />
+    <Property Name="ID_AREA" Type="int" Nullable="false" />
+    <Property Name="DATE_CREATED" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tb_Cabinet_tb_Cell">
+    <End Role="tb_Cell" Type="Self.tb_Cell" Multiplicity="0..1" />
+    <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Cell">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_Cabinet">
+        <PropertyRef Name="ID_CELL_MAIN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Cabinet_tb_Location">
+    <End Role="tb_Location" Type="Self.tb_Location" Multiplicity="1" />
+    <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Location">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_Cabinet">
+        <PropertyRef Name="ID_LOC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Cell_tb_Area">
+    <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+    <End Role="tb_Cell" Type="Self.tb_Cell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Area">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_Cell">
+        <PropertyRef Name="ID_AREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_InOutRecord_tb_Area">
+    <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+    <End Role="tb_InOutRecord" Type="Self.tb_InOutRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Area">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_InOutRecord">
+        <PropertyRef Name="ID_AREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_InOutRecord_tb_Cabinet">
+    <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+    <End Role="tb_InOutRecord" Type="Self.tb_InOutRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Cabinet">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_InOutRecord">
+        <PropertyRef Name="ID_CABINET" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_InOutRecord_tb_Part">
+    <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+    <End Role="tb_InOutRecord" Type="Self.tb_InOutRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Part">
+        <PropertyRef Name="PARTID" />
+      </Principal>
+      <Dependent Role="tb_InOutRecord">
+        <PropertyRef Name="PARTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Location_tb_Area">
+    <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+    <End Role="tb_Location" Type="Self.tb_Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Area">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_Location">
+        <PropertyRef Name="ID_AREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Remain_tb_Area">
+    <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+    <End Role="tb_Remain" Type="Self.tb_Remain" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Area">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_Remain">
+        <PropertyRef Name="ID_AREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Remain_tb_Cabinet">
+    <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+    <End Role="tb_Remain" Type="Self.tb_Remain" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Cabinet">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_Remain">
+        <PropertyRef Name="ID_CABINET" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Remain_tb_Part">
+    <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+    <End Role="tb_Remain" Type="Self.tb_Remain" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Part">
+        <PropertyRef Name="PARTID" />
+      </Principal>
+      <Dependent Role="tb_Remain">
+        <PropertyRef Name="PARTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingCabinetCell_tb_Cabinet">
+    <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+    <End Role="tb_SettingCabinetCell" Type="Self.tb_SettingCabinetCell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Cabinet">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_SettingCabinetCell">
+        <PropertyRef Name="ID_CABINET" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingCabinetCell_tb_Cell">
+    <End Role="tb_Cell" Type="Self.tb_Cell" Multiplicity="1" />
+    <End Role="tb_SettingCabinetCell" Type="Self.tb_SettingCabinetCell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Cell">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_SettingCabinetCell">
+        <PropertyRef Name="ID_CELL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingCabinetPart_tb_Cabinet">
+    <End Role="tb_Cabinet" Type="Self.tb_Cabinet" Multiplicity="1" />
+    <End Role="tb_SettingCabinetPart" Type="Self.tb_SettingCabinetPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Cabinet">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_SettingCabinetPart">
+        <PropertyRef Name="ID_CABINET" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingCabinetPart_tb_Part">
+    <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+    <End Role="tb_SettingCabinetPart" Type="Self.tb_SettingCabinetPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Part">
+        <PropertyRef Name="PARTID" />
+      </Principal>
+      <Dependent Role="tb_SettingCabinetPart">
+        <PropertyRef Name="PARDID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingPart_tb_Area">
+    <End Role="tb_Area" Type="Self.tb_Area" Multiplicity="1" />
+    <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Area">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_SettingPart">
+        <PropertyRef Name="ID_AREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingPart_tb_Merchandise">
+    <End Role="tb_Merchandise" Type="Self.tb_Merchandise" Multiplicity="1" />
+    <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Merchandise">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_SettingPart">
+        <PropertyRef Name="ID_MER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingPart_tb_Model">
+    <End Role="tb_Model" Type="Self.tb_Model" Multiplicity="1" />
+    <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Model">
+        <PropertyRef Name="ID_" />
+      </Principal>
+      <Dependent Role="tb_SettingPart">
+        <PropertyRef Name="ID_MODEL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_SettingPart_tb_Part">
+    <End Role="tb_Part" Type="Self.tb_Part" Multiplicity="1" />
+    <End Role="tb_SettingPart" Type="Self.tb_SettingPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Part">
+        <PropertyRef Name="PARTID" />
+      </Principal>
+      <Dependent Role="tb_SettingPart">
+        <PropertyRef Name="PARTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetTimeNow" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="AirSupplyPDCModelStoreContainer">
+    <EntitySet Name="tb_Area" EntityType="Self.tb_Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Cabinet" EntityType="Self.tb_Cabinet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Cell" EntityType="Self.tb_Cell" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_InOutRecord" EntityType="Self.tb_InOutRecord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Location" EntityType="Self.tb_Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Merchandise" EntityType="Self.tb_Merchandise" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Model" EntityType="Self.tb_Model" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Part" EntityType="Self.tb_Part" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Remain" EntityType="Self.tb_Remain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_SettingCabinetCell" EntityType="Self.tb_SettingCabinetCell" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_SettingCabinetPart" EntityType="Self.tb_SettingCabinetPart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_SettingPart" EntityType="Self.tb_SettingPart" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tb_Cabinet_tb_Cell" Association="Self.FK_tb_Cabinet_tb_Cell">
+      <End Role="tb_Cell" EntitySet="tb_Cell" />
+      <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Cabinet_tb_Location" Association="Self.FK_tb_Cabinet_tb_Location">
+      <End Role="tb_Location" EntitySet="tb_Location" />
+      <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Cell_tb_Area" Association="Self.FK_tb_Cell_tb_Area">
+      <End Role="tb_Area" EntitySet="tb_Area" />
+      <End Role="tb_Cell" EntitySet="tb_Cell" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_InOutRecord_tb_Area" Association="Self.FK_tb_InOutRecord_tb_Area">
+      <End Role="tb_Area" EntitySet="tb_Area" />
+      <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_InOutRecord_tb_Cabinet" Association="Self.FK_tb_InOutRecord_tb_Cabinet">
+      <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+      <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_InOutRecord_tb_Part" Association="Self.FK_tb_InOutRecord_tb_Part">
+      <End Role="tb_Part" EntitySet="tb_Part" />
+      <End Role="tb_InOutRecord" EntitySet="tb_InOutRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Location_tb_Area" Association="Self.FK_tb_Location_tb_Area">
+      <End Role="tb_Area" EntitySet="tb_Area" />
+      <End Role="tb_Location" EntitySet="tb_Location" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Remain_tb_Area" Association="Self.FK_tb_Remain_tb_Area">
+      <End Role="tb_Area" EntitySet="tb_Area" />
+      <End Role="tb_Remain" EntitySet="tb_Remain" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Remain_tb_Cabinet" Association="Self.FK_tb_Remain_tb_Cabinet">
+      <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+      <End Role="tb_Remain" EntitySet="tb_Remain" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Remain_tb_Part" Association="Self.FK_tb_Remain_tb_Part">
+      <End Role="tb_Part" EntitySet="tb_Part" />
+      <End Role="tb_Remain" EntitySet="tb_Remain" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingCabinetCell_tb_Cabinet" Association="Self.FK_tb_SettingCabinetCell_tb_Cabinet">
+      <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+      <End Role="tb_SettingCabinetCell" EntitySet="tb_SettingCabinetCell" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingCabinetCell_tb_Cell" Association="Self.FK_tb_SettingCabinetCell_tb_Cell">
+      <End Role="tb_Cell" EntitySet="tb_Cell" />
+      <End Role="tb_SettingCabinetCell" EntitySet="tb_SettingCabinetCell" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingCabinetPart_tb_Cabinet" Association="Self.FK_tb_SettingCabinetPart_tb_Cabinet">
+      <End Role="tb_Cabinet" EntitySet="tb_Cabinet" />
+      <End Role="tb_SettingCabinetPart" EntitySet="tb_SettingCabinetPart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingCabinetPart_tb_Part" Association="Self.FK_tb_SettingCabinetPart_tb_Part">
+      <End Role="tb_Part" EntitySet="tb_Part" />
+      <End Role="tb_SettingCabinetPart" EntitySet="tb_SettingCabinetPart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingPart_tb_Area" Association="Self.FK_tb_SettingPart_tb_Area">
+      <End Role="tb_Area" EntitySet="tb_Area" />
+      <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingPart_tb_Merchandise" Association="Self.FK_tb_SettingPart_tb_Merchandise">
+      <End Role="tb_Merchandise" EntitySet="tb_Merchandise" />
+      <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingPart_tb_Model" Association="Self.FK_tb_SettingPart_tb_Model">
+      <End Role="tb_Model" EntitySet="tb_Model" />
+      <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_SettingPart_tb_Part" Association="Self.FK_tb_SettingPart_tb_Part">
+      <End Role="tb_Part" EntitySet="tb_Part" />
+      <End Role="tb_SettingPart" EntitySet="tb_SettingPart" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

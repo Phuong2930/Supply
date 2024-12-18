@@ -1,0 +1,365 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project TS\\Copy\\AirSupplyPDC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|d:\\project ts\\copy\\airsupplypdc\\airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\frmserverlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmserverlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\tcp-ip\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\tcp-ip\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\tb_part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\tb_part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\airsupplydb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\airsupplydb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\tcp-ip\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\tcp-ip\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\tcp-ip\\objects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\tcp-ip\\objects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\tcp-ip\\inforcommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\tcp-ip\\inforcommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\tcp-ip\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\tcp-ip\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\frmserverlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmserverlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\itempart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\itempart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\itemremain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\itemremain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\itemcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\itemcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|D:\\Project TS\\Copy\\AirSupplyPDC\\airsupplypdc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "itemCabinet.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemCabinet.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\itemCabinet.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemCabinet.cs*",
+              "RelativeToolTip": "AirSupplyPDC\\itemCabinet.cs*",
+              "ViewState": "AgIAANcAAAAAAAAAAAAAAP8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T01:18:37.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.Config",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\App.Config",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\App.Config",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\App.Config",
+              "RelativeToolTip": "AirSupplyPDC\\App.Config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-06T08:49:39.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Connectdb.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Connectdb.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\TCP-IP\\Connectdb.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Connectdb.cs",
+              "RelativeToolTip": "AirSupplyPDC\\TCP-IP\\Connectdb.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAmwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T03:57:12.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "itemCabinet.cs [Design]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemCabinet.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\itemCabinet.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemCabinet.cs [Design]*",
+              "RelativeToolTip": "AirSupplyPDC\\itemCabinet.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T04:32:04.555Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmStore.cs [Design]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmStore.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\frmStore.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmStore.cs [Design]",
+              "RelativeToolTip": "AirSupplyPDC\\frmStore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T04:31:58.301Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmStore.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmStore.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\frmStore.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmStore.cs",
+              "RelativeToolTip": "AirSupplyPDC\\frmStore.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:47:17.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InforCommon.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\InforCommon.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\TCP-IP\\InforCommon.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\InforCommon.cs",
+              "RelativeToolTip": "AirSupplyPDC\\TCP-IP\\InforCommon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T03:33:41.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmMain.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\frmMain.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmMain.cs [Design]",
+              "RelativeToolTip": "AirSupplyPDC\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T03:57:36.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmServerList.cs [Design]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmServerList.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\frmServerList.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmServerList.cs [Design]",
+              "RelativeToolTip": "AirSupplyPDC\\frmServerList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T04:31:46.334Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Objects.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Objects.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\TCP-IP\\Objects.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Objects.cs",
+              "RelativeToolTip": "AirSupplyPDC\\TCP-IP\\Objects.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T03:33:45.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "tb_Part.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\tb_Part.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\tb_Part.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\tb_Part.cs",
+              "RelativeToolTip": "AirSupplyPDC\\tb_Part.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwB4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T03:35:19.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\packages.config",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\packages.config",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\packages.config",
+              "RelativeToolTip": "AirSupplyPDC\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-04T04:32:13.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Client.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\TCP-IP\\Client.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Client.cs",
+              "RelativeToolTip": "AirSupplyPDC\\TCP-IP\\Client.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T03:56:41.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AirSupplyDb.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\AirSupplyDb.edmx",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\AirSupplyDb.edmx",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\AirSupplyDb.edmx [Diagram1]",
+              "RelativeToolTip": "AirSupplyPDC\\AirSupplyDb.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-12-06T03:45:00.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Server.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Server.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\TCP-IP\\Server.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\TCP-IP\\Server.cs",
+              "RelativeToolTip": "AirSupplyPDC\\TCP-IP\\Server.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T03:57:15.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "itemPart.cs [Design]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemPart.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\itemPart.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemPart.cs [Design]",
+              "RelativeToolTip": "AirSupplyPDC\\itemPart.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T03:09:33.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmServerList.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmServerList.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\frmServerList.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmServerList.cs",
+              "RelativeToolTip": "AirSupplyPDC\\frmServerList.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:39:56.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "itemRemain.cs [Design]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemRemain.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\itemRemain.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemRemain.cs [Design]",
+              "RelativeToolTip": "AirSupplyPDC\\itemRemain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T04:32:12.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "itemCell.cs [Design]",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemCell.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\itemCell.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\itemCell.cs [Design]*",
+              "RelativeToolTip": "AirSupplyPDC\\itemCell.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T04:32:05.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\Program.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\Program.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\Program.cs",
+              "RelativeToolTip": "AirSupplyPDC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T04:32:15.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmMain.cs",
+              "RelativeDocumentMoniker": "AirSupplyPDC\\frmMain.cs",
+              "ToolTip": "D:\\Project TS\\Copy\\AirSupplyPDC\\AirSupplyPDC\\frmMain.cs",
+              "RelativeToolTip": "AirSupplyPDC\\frmMain.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAkwD8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T04:37:45.105Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

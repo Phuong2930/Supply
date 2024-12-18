@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|d:\\baitapc#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|d:\\baitapc#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\itemcabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|d:\\baitapc#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|d:\\baitapc#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C208DA5C-7314-47BC-8B74-A4CA2C8D8A31}|AirSupplyPDC\\AirSupplyPDC.csproj|solutionrelative:airsupplypdc\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "itemCabinet.cs",
+              "DocumentMoniker": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\itemcabinet.cs",
+              "RelativeDocumentMoniker": "airsupplypdc\\itemcabinet.cs",
+              "ToolTip": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\itemcabinet.cs",
+              "RelativeToolTip": "airsupplypdc\\itemcabinet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T13:09:08.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "itemCabinet.cs [Design]",
+              "DocumentMoniker": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\itemcabinet.cs",
+              "RelativeDocumentMoniker": "airsupplypdc\\itemcabinet.cs",
+              "ToolTip": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\itemcabinet.cs [Design]",
+              "RelativeToolTip": "airsupplypdc\\itemcabinet.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T13:08:16.574Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmStore.cs [Design]",
+              "DocumentMoniker": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\frmstore.cs",
+              "RelativeDocumentMoniker": "airsupplypdc\\frmstore.cs",
+              "ToolTip": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\frmstore.cs [Design]",
+              "RelativeToolTip": "airsupplypdc\\frmstore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T13:08:07.034Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\frmmain.cs",
+              "RelativeDocumentMoniker": "airsupplypdc\\frmmain.cs",
+              "ToolTip": "D:\\BaitapC#\\deploy-6757feb447956ccf9acb724b\\airsupplypdc\\frmmain.cs [Design]",
+              "RelativeToolTip": "airsupplypdc\\frmmain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T13:06:10.381Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

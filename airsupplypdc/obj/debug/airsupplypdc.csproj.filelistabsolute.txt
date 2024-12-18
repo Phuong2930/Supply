@@ -1,0 +1,133 @@
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\AirSupplyPDC.exe.config
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\AirSupplyPDC.exe
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\AirSupplyPDC.pdb
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.BonusSkins.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Data.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Utils.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\EntityFramework.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\EntityFramework.SqlServer.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\Newtonsoft.Json.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraBars.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Office.v18.1.Core.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Images.v18.1.dll
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmMain.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmServerList.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmStore.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemCabinet.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemCell.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemPart.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemRemain.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.Properties.Resources.resources
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.GenerateResource.cache
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.exe.licenses
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.CoreCompileInputs.cache
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.CopyComplete
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.exe
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.pdb
+\\cvn-vsmartdbs\VuProject\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.csprojAssemblyReference.cache
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\AirSupplyPDC.exe.config
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\AirSupplyPDC.exe
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\AirSupplyPDC.pdb
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\EntityFramework.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\Newtonsoft.Json.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.AssemblyReference.cache
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmMain.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmServerList.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmStore.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemCabinet.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemCell.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemPart.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemRemain.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.Properties.Resources.resources
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.GenerateResource.cache
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.exe.licenses
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.CoreCompileInputs.cache
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSuppl.6148A81E.Up2Date
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.exe
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\obj\Debug\AirSupplyPDC.pdb
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.BonusSkins.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Data.Desktop.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Data.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Drawing.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Printing.v24.1.Core.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Sparkline.v24.1.Core.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Utils.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraEditors.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraGrid.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraLayout.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraPrinting.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Core.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraBars.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.RichEdit.v24.1.Core.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraTreeList.v24.1.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Office.v24.1.Core.dll
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Drawing.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Data.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Data.Desktop.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Utils.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Sparkline.v24.1.Core.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraEditors.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Printing.v24.1.Core.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraGrid.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraLayout.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraPrinting.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Core.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraBars.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.RichEdit.v24.1.Core.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.XtraTreeList.v24.1.xml
+D:\Project TS\Copy\AirSupplyPDC\AirSupplyPDC\bin\Debug\DevExpress.Office.v24.1.Core.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\AirSupplyPDC.exe.config
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\AirSupplyPDC.exe
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\AirSupplyPDC.pdb
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\EntityFramework.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\EntityFramework.SqlServer.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\Newtonsoft.Json.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Core.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraBars.v24.1.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.RichEdit.v24.1.Core.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraTreeList.v24.1.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Office.v24.1.Core.dll
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Drawing.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Data.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Data.Desktop.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Utils.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Sparkline.v24.1.Core.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraEditors.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Printing.v24.1.Core.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraGrid.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraLayout.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraPrinting.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Core.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraBars.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.RichEdit.v24.1.Core.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.XtraTreeList.v24.1.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\bin\Debug\DevExpress.Office.v24.1.Core.xml
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.AssemblyReference.cache
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmMain.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmServerList.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.frmStore.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemCabinet.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemCell.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemPart.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.itemRemain.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.Properties.Resources.resources
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.GenerateResource.cache
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.exe.licenses
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.csproj.CoreCompileInputs.cache
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSuppl.6148A81E.Up2Date
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.exe
+D:\BaitapC#\deploy-6757feb447956ccf9acb724b\AirSupplyPDC\obj\Debug\AirSupplyPDC.pdb

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirSupplyPDCModelStoreContainer" CdmEntityContainer="AirSupplyPDCEntities">
+    <FunctionImportMapping FunctionImportName="GetTimeNow" FunctionName="AirSupplyPDCModel.Store.GetTimeNow" />
+    <EntitySetMapping Name="tb_Area">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Area">
+        <MappingFragment StoreEntitySet="tb_Area">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+          <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+          <ScalarProperty Name="ID_" ColumnName="ID_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Cabinet">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Cabinet">
+        <MappingFragment StoreEntitySet="tb_Cabinet">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+          <ScalarProperty Name="ID_CELL_MAIN" ColumnName="ID_CELL_MAIN" />
+          <ScalarProperty Name="ISRETURN_" ColumnName="ISRETURN_" />
+          <ScalarProperty Name="CAPACITY_" ColumnName="CAPACITY_" />
+          <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+          <ScalarProperty Name="ID_LOC" ColumnName="ID_LOC" />
+          <ScalarProperty Name="ID_" ColumnName="ID_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Cell">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Cell">
+        <MappingFragment StoreEntitySet="tb_Cell">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="BACKGROUND" ColumnName="BACKGROUND" />
+          <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+          <ScalarProperty Name="ID_" ColumnName="ID_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_InOutRecord">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_InOutRecord">
+        <MappingFragment StoreEntitySet="tb_InOutRecord">
+          <ScalarProperty Name="DATE_OUTSTORE" ColumnName="DATE_OUTSTORE" />
+          <ScalarProperty Name="DATE_INSTORE" ColumnName="DATE_INSTORE" />
+          <ScalarProperty Name="DATE_ONCONVEYOR" ColumnName="DATE_ONCONVEYOR" />
+          <ScalarProperty Name="INOUT_" ColumnName="INOUT_" />
+          <ScalarProperty Name="SNP_" ColumnName="SNP_" />
+          <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+          <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Location">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Location">
+        <MappingFragment StoreEntitySet="tb_Location">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+          <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+          <ScalarProperty Name="ID_" ColumnName="ID_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Merchandise">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Merchandise">
+        <MappingFragment StoreEntitySet="tb_Merchandise">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+          <ScalarProperty Name="ID_" ColumnName="ID_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Model">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Model">
+        <MappingFragment StoreEntitySet="tb_Model">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+          <ScalarProperty Name="ID_" ColumnName="ID_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Part">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Part">
+        <MappingFragment StoreEntitySet="tb_Part">
+          <ScalarProperty Name="type_part" ColumnName="type_part" />
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="ENABLE_" ColumnName="ENABLE_" />
+          <ScalarProperty Name="NAMEBACK_" ColumnName="NAMEBACK_" />
+          <ScalarProperty Name="PCSPBOX_" ColumnName="PCSPBOX_" />
+          <ScalarProperty Name="VENDOR_" ColumnName="VENDOR_" />
+          <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+          <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Remain">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_Remain">
+        <MappingFragment StoreEntitySet="tb_Remain">
+          <ScalarProperty Name="ISFINISH" ColumnName="ISFINISH" />
+          <ScalarProperty Name="INSTORE_DATE" ColumnName="INSTORE_DATE" />
+          <ScalarProperty Name="ONCONVEYOR_DATE" ColumnName="ONCONVEYOR_DATE" />
+          <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+          <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+          <ScalarProperty Name="ID_" ColumnName="ID_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_SettingCabinetCell">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_SettingCabinetCell">
+        <MappingFragment StoreEntitySet="tb_SettingCabinetCell">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="ID_CELL" ColumnName="ID_CELL" />
+          <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_SettingCabinetPart">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_SettingCabinetPart">
+        <MappingFragment StoreEntitySet="tb_SettingCabinetPart">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="PARDID" ColumnName="PARDID" />
+          <ScalarProperty Name="ID_CABINET" ColumnName="ID_CABINET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_SettingPart">
+      <EntityTypeMapping TypeName="AirSupplyPDCModel.tb_SettingPart">
+        <MappingFragment StoreEntitySet="tb_SettingPart">
+          <ScalarProperty Name="DATE_CREATED" ColumnName="DATE_CREATED" />
+          <ScalarProperty Name="ID_AREA" ColumnName="ID_AREA" />
+          <ScalarProperty Name="ID_MODEL" ColumnName="ID_MODEL" />
+          <ScalarProperty Name="ID_MER" ColumnName="ID_MER" />
+          <ScalarProperty Name="PARTID" ColumnName="PARTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
